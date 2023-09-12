@@ -1,0 +1,71 @@
+Qué es Ruby y para qué sirve este lenguaje?
+Ruby es un lenguaje de programación orientado a objetos de código abierto que fue creado en 
+1995 por el desarrollador Yukihiro Matsumoto, también conocido como Matz. A diferencia de 
+otros lenguajes como C y C++, Ruby no se comunica directamente con el hardware, sino que se
+basa en un archivo de texto procesado por un intérprete externo para crear código.
+
+¿Para qué se utiliza Ruby?
+Este lenguaje se emplea para desarrollar servicios de procesamiento de datos, 
+herramientas de automatización, aplicaciones de escritorio y sitios web.
+
+Ruby tiene la habilidad de dividir piezas de código en objetos que se pueden generar 
+y reutilizar las veces que sea necesario, lo cual acelera todo el proceso de desarrollo. 
+En 2005, se introdujo Ruby on Rails, un framework de este que se hizo muy popular.
+
+Características de Ruby
+Ahora que conoces la información más relevante acerca de Ruby, quizás te interese conocer 
+más acerca de sus características.
+
+1. Es un lenguaje dinámico
+En Ruby, las variables no están asociadas a un tipo de dato específico, sino que pueden 
+cambiar a medida que el programa se desarrolla.
+
+2. Requiere un programa intérprete
+A diferencia de lenguajes compilados, Ruby requiere un programa adicional intérprete 
+que lee el archivo y lo ejecuta. Existen varios intérpretes como jruby, mruby, rubinius, 
+opal o ruby motion, pero el más popular es cruby.
+
+Encuentra al final de esta clase algunos recursos 👇🏻 para que puedas profundizar en
+este tema por tu cuenta.
+
+3. Desarrolla orientado a objetos
+Como ya mencionamos, en Ruby cada elemento de la línea de código es un objeto. 
+Por ejemplo: booleanos, cadenas, clases, etc. De esta forma pueden utilizarse 
+como se necesiten y reutilizarse a la hora de construir aplicaciones o programas.
+
+4. Guía la productividad del desarrollador
+El lenguaje de Ruby es muy parecido al lenguaje humano, pues sus líneas
+ de código son muy parecidas al inglés y esto las convierte en contenido fácil 
+ de entender y que facilita la productividad a la hora de desarrollar.
+
+Ventajas de Ruby
+Ruby es un lenguaje que tiene grandes ventajas a la hora de desarrollar aplicaciones.
+
+Ofrece una comunidad grande, por lo que siempre habrá alguien que te pueda ayudar o 
+guiar en tu camino.
+Tiene múltiples librerías disponibles (gemas).
+Goza de constantes actualizaciones.
+Maneja un lenguaje maduro.
+Ofrece facilidades para hacer meta programación.
+Puede crear DSLs (Domain Specific Languages).
+Desventajas de Ruby
+Sin embargo, a la hora de elegirlo como lenguaje preferido debes tener en cuenta lo siguiente.
+
+Es un lenguaje “interpretado” o “lento”, pues existe un paso intermedio entre la 
+ejecución del código y la interpretación que realiza el computador.
+Requiere un alto uso de memoria.
+No soporta paralelismo.
+Decrece en popularidad con el tiempo (aunque aún está en el top 10).
+Qué es Ruby on Rails
+Ruby on Rails es un framework de desarrollo de aplicaciones que utiliza 
+el lenguaje Ruby y brinda las herramientas necesarias para desarrollar tecnología en 
+el menor tiempo posible.
+
+Aplicaciones creadas con Ruby on Rails
+Estas aplicaciones fueron desarrolladas con este lenguaje y se han convertido 
+en un referente en su campo.
+
+Google Maps
+Instagram
+Gmail
+Android
