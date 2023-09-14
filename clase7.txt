@@ -1,0 +1,80 @@
+Tipos de datos IV: Arrays
+
+Un array o arreglo es un tipo de datos especial donde vas a poder almacenar múltiples objetos 
+en una sola variable.
+
+Ejemplo:
+
+letras = [ ""q"", ""w"", ""e"", ""r"", ""t"", ""y""]
+Algo interesante de Ruby es que podemos utilizar números negativos para acceder a las
+posiciones desde el último elemento del array.
+
+Los arreglos en Ruby no tienen un tipo específico, esto quiere decir que dentro de 
+un array podemos tener diferentes tipos de datos en cada elemento.
+
+
+# Arrays
+
+# Declaración de un array
+letras = ["q","w","e","r","t","y"]
+letras.size
+
+# Accediendo al contenido del arreglo
+letras[0]
+letras[1]
+letras[3] = "X"
+letras[100]
+letras[-1]
+letras[-2]
+letras[-100]
+letras[letras.size]
+letras[letras.size - 1]
+letras.methods
+
+# Array#methods retorna un array!
+letras.methods.class
+
+# Métodos utilitarios
+letras.sort
+letras
+letras.sort!
+letras
+
+letras.first
+letras.last
+letras.include? "x"
+letras.include? "q"
+
+["q","w","e","r","t","y"].count { |x| x == "q" }
+[1, 2, 3, 4].map { |x| x ** 2 }
+[1, 2, 3, 4].select { |x| x.even? }
+[1, 2, 3, 4].select(&:even?)
+[1, 2, 3, 4].any?(&:even?)
+[1, 2, 3, 4].sum
+[1, 2, 3, 4].min
+[1, 2, 3, 4].max
+
+[1, "dos", :tres, 4.5].map { |x| x.class }
+[1, "dos", :tres, 4.5].select { |x| x.is_a? Numeric }
+
+# Transformando un String en un Array y viceversa
+
+"hola mundo".split("")
+"hola mundo".split.map { |x| x.ord }
+"hola mundo".split.map { |x| x.upcase }.join
+
+Métodos:
+
+letras.include? “y” (Devuelve true si incluye dicho elemento)
+letras.count { |x| x == “y” } (Nos retorna la cantidad de elementos que cumplen dicha condición)
+[1,2,3,4,5].map { |x| x*2 } (Nos retorna un arreglo modificado según la condición)
+[1,2,3,4,5].select { |x| x.even? } (Nos retorna un arreglo con los elementos seleccionados 
+según la condición)
+[1,2,3,4,5].min (Nos va a retornar el elemento más pequeño)
+[1,2,3,4,5].max (Nos va a retornar el elemento más grande)
+[1,2,3,4,5].sum (Retorna la suma de todos los elementos del arreglo)
+“Hola Mundo”.split(" ") (Nos retorna un arreglo con la cadena dentro separada por el
+elemento dentro del paréntesis)
+[“a”, “b” ,“c”].join("-") (Retorna los elementos de una matriz en una cadena
+ separada por el elemento dentro del paréntesis)
+letras.sort (Nos retorna una copia ordenada del arreglo)
