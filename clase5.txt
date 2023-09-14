@@ -1,0 +1,104 @@
+Tipos de datos II: Strings
+
+¿Cómo declarar una string?
+En Ruby hay diferentes formas de declarar un string
+
+saludo = "Hola"
+saludo = 'Hola'
+# Estas notaciones nos ayudan a cuando necesitamos utilizar comillas dentro de un string like
+= %q(María "la patilla" Coll)
+saludo = %q(Hola)
+saludo = %Q(Hola)
+Otra característica útil es que podemos reemplazar (interpolar) una variable dentro de
+la declaración de un string
+
+nombre = maría
+saludo = "Hola #{nombre}"
+saludo = %Q(Hola #{nombre})
+
+#Si lo hacemos con comillas sencillas desactivamos la interpolación
+saludo = 'Hola #{4 + 5}'
+Podemos escribir string sin que sean variables
+
+"Pepe".class
+
+# Para poner todo uppercase
+"Pepe".upcase
+
+# Para poner todo lowercase
+"PEPE".downcase
+
+# Para saber de que tamaño es un string
+"Pepe".length
+
+# Para invertir el casing de cada uno de los carácteres
+"PePE".swapcase # pEpe
+
+# Para preguntar si una variable contiene x carácter
+"Pepe".include? "a"
+
+# Si tenemos un string que tenga espacio innecesarios en el inicio y el final para que lo quite 
+utilizar el método
+"   Pepe   ".strip
+
+# Podemos preguntar si un string está vacío
+"Pepe".empty?
+
+# Para reemplazar algo dentro del string
+"Pepe".gsub("Pe", "Ru")
+Podemos utilizar los operadores para buscar cosas o sumar.
+
+# Para concatenar un string
+"Pepe" + " simon"
+
+# Podemos multiplicar un string
+"Pepe"*3
+
+# Para crear una nueva variable con gsub
+nombre_2 = "Pepe Díaz".gsub("Díaz", "Fernandez")
+
+# Pero para cambiar el valor de una variable
+"Pepe Díaz".gsub!("Díaz", "Fernandez")
+
+# Métodos utilitarios de String
+Algunos métodos para un string:
+
+“hola”.upcase (Devuelve una copia de la cadena en mayúsculas)
+“hola”.downcase ( Devuelve una copia de la cadena en minusculas)
+“hola”.length (Devuelve la cantidad de caracteres de la cadena)
+“HoLa”.swapcase (Devuelve una copia de la cadena con caracteres alfabéticos en mayúsculas
+ convertidos a minúsculas y viceversa)
+“hola”.include? “h” (Devuelve true si el carácter asignado entre está incluido en nuestra 
+cadena o variable)
+" hola".strip (Devuelve una copia de la cadena con caracteres alfabéticos en mayúsculas 
+convertidos a minúsculas y minúsculas convertidos a mayúsculas)
+“”.empty (Devuelve true si la cadena está vacia)
+“Hola ruby”.gsup(“ruby”, “mundo”) ( Devuelve una copia de la cadena con todas las apariciones
+ de patrón sustituidas por el segundo argumento )
+gsub! (Para modificar la variable en ves de devolver una copia)
+frase.length
+frase.upcase
+frase.downcase()
+frase.swapcase
+frase.include? "42"
+frase.strip
+frase.empty?
+frase.gsub("Pepe", "Platzi")
+frase.end_with? "años"
+frase.strip.end_with? "años"
+frase * 5
+puts frase
+frase.gsub!("Pepe", "Platzi")
+puts frase
+
+# Inspeccionamos el tipo o la clase de la variable `frase` y sus métodos
+frase.class
+frase.class.class
+frase.methods
+
+# Código ASCII
+"a".ord
+"b".ord
+(("b".ord) + 1).chr
+"A".ord
+"@".ord
