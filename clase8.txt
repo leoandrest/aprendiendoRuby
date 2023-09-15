@@ -1,0 +1,62 @@
+Tipos de datos V: Hashes 
+Hashes, también conocidos como arrays asociativos, 
+mapas o diccionarios, son parecidos a los arrays en 
+que son una colección indexada de referencias a objetos.
+Sin embargo, mientras que en los arrays los índices son 
+números, en los hashes se puede indexar con objetos de cualquier tipo.
+
+Cuando se almacena un valor en un array, se dan dos objetos: 
+el índice y el valor. Luego, se puede obtener dicho valor, gracias al índice.
+
+# Hashes
+
+capitales = {
+  "Mexico" => "Ciudad de Mexico",
+  "Colombia" => "Bogota",
+  "Peru" => "Lima",
+  "Chile" => "Santiago de Chile",
+  "España" => "Madrid",
+  "Argentina" => "Buenos aires",
+  "Paises bajos" => "Amsterdam",
+  "Estados Unidos" => "Washington"
+}
+
+capitales["Colombia"]
+capitales["Argentina"]
+capitales["Marte"] = "Elon"
+capitales.size
+capitales.empty?
+capitales.has_value? "Washington"
+capitales.invert
+capitales.merge({"Alemania" => "Berlin", "Francia" => "Paris"})
+capitales.map { |k,v| "La capital de #{k} es #{v}" } 
+capitales.transform_values { |v| v.downcase }
+{}.class
+{}.methods
+
+# Creando un hash apartir de un array
+[["pepito", 13], ["sutanito", 30], ["fulanito", 2]].to_h 
+
+en resumen :
+Hashes
+
+Es una estructura que almacena datos como un diccionario lo haría 
+(valor -> 10. Información asociada a ese valor)
+
+-Se definen dentro de llaves
+
+ej: estudiante = {“name” => “victor”, [] => “Soy arreglo”, “Ciudad” => “Bogotá”, 30 => “Años”}
+Se le pueden asignar valores por defecto a las posiciones vacías
+
+-Pueden modificarse en tiempo de ejecución
+
+-Para los valores clave por regla suele utilizarse un símbolo
+
+ej: estudiante = {:name => “victor”, :Ciudad => “Bogotá”, :30 => “Años”}
+Si solo hay claves “símbolos” por regla se escribe asi
+
+ej: estudiante = {name: “victor” Ciudad: “Bogotá” 30: “Años”}
+En otros lenguajes son comúnmente conocidos como arreglos asociativos
+
+-En un arreglo se accede a la informacion por medio de un indice, en los hashes 
+la clave con la que podemos acceder pude ser cualquier tipo de objeto, incluso un símbolo, o arreglo
