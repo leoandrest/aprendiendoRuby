@@ -1,0 +1,62 @@
+Proc
+
+Un bloque no es un objeto, es parte de la sintaxis de ejecución de un método,
+por tanto no tiene las funcionalidades de un objeto.
+Podemos simular la funcionalidad de un objetos al pasar un bloque como un
+“proc”, la sintaxis dice que antes del nombre de la variable de método se
+bebe utilizar el signo “&” el cual le indica a ruby que el bloque que se esta
+pasando en realidad se trata de un objeto “proc”
+Un método solo puede recibir un bloque, pero puede recibir varios “proc”
+Es las lenta la ejecución de un proc que la de un bloque
+Procedimiento return en un proc
+
+Siempre que intentemos utilizar la palabra reservada return en un proc debemos tener en cuenta que :
+
+Para un proc se debe llamar un metodo y dentro del método declarar el procedimiento que a utilizar.
+Si no lo hacemos de este modo nos retornara Error “local jump error” porque esta tratando de ejecutar 
+un return de primer nivel
+
+Lambda :
+
+Una “lambda” es una función anónima (sin nombre), su sintaxis es “lambda {…}” o también utilizando 
+la sintaxis de flecha “->(){}”
+Hay similitudes muy grandes entre los “procs” y las “lambdas”, lo que los diferencia es que un 
+“proc” se comporta como un bloque, mientras que una “lambda” se comporta como un método
+A una “lambda” se le pueden pasar argumentos, pero al igual que a un metodo estos deben pasarse 
+en el mismo orden que fueron llamados y son obligatorios, lo que no sucede en un “proc” pues para
+este es opcional
+Cuando se hace “return” de una desde una “lambda” se detiene la ejecución del método (lambda),
+pero no se detiene la ejecución de donde fue llamado (otro método), caso contrario si estamos 
+trabajando con bloques que si termina la ejecucion del metodo donde fue llamado
+
+ejemplo 1:
+saludar = Proc.new {irb(main):001:0> saludar = Proc.new { |nombre| puts " Quiuboo pues #{nombre}" }
+=> #<Proc:0x000001bce2eec9d8 (ir...
+irb(main):002:0> saludar.class       
+=> Proc
+irb(main):003:0> saludar.call("tatico")
+ Quiuboo pues tatico
+=> nil          
+
+ejemplo 2:
+                class Transaction
+irb(main):005:2*  def exec
+irb(main):006:2*    puts "ejecutando transaccion"
+irb(main):007:3*     if block_given?
+irb(main):008:3*       yield
+irb(main):009:2*     end
+irb(main):010:1*   end
+irb(main):011:0> end
+=> :exec
+irb(main):014:0> tx = Transaction.new
+=> #<Transaction:0x000001bce381bc48>
+irb(main):015:0> tx.exec
+ejecutando transaccion
+=> nil
+irb(main):016:0> tx.exec { puts "despues de la transaccion"}es de la transaccion"}
+ejecutando transaccion
+despues de la transaccion
+=> nil
+irb(main):017:0>
+
+(ejemplos hechos en consola.)
