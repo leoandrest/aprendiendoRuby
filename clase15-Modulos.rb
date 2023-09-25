@@ -51,3 +51,6 @@ excel_report.build
 # Los módulos se definen como las clases, pero la palabra clave de módulo se usa en lugar de la palabra clave de clase.
 # Los módulos sirven como herramientas, es el equivalente a un mixin que se puede reutilizar a lo largo de las clases.
 # Los módulos son agnósticos, los podemos utilizar en cualquier tipo de clase.
+#Una buena práctica de programación es la modularización del código, lo que algunos llaman alta 
+#cohesión, lo que quiere decir que las clases o funcionalidades que hacen
+#cosas similares estén dentro del mismo contenedor; en Ruby se utilizan los módulos para ello.
