@@ -60,3 +60,10 @@ despues de la transaccion
 irb(main):017:0>
 
 (ejemplos hechos en consola.)
+
+Diferencia entre procs y lambdas
+
+A los procs no les importa la cantidad correcta de argumentos, 
+mientras que las lambdas generarán una excepción.
+El retorno y la interrupción se comportan de manera diferente en procs y lambdas
+Next se comporta de la misma manera tanto en procs como en lambdas.
