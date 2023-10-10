@@ -25,9 +25,6 @@ A diferencia de lenguajes compilados, Ruby requiere un programa adicional intér
 que lee el archivo y lo ejecuta. Existen varios intérpretes como jruby, mruby, rubinius, 
 opal o ruby motion, pero el más popular es cruby.
 
-Encuentra al final de esta clase algunos recursos 👇🏻 para que puedas profundizar en
-este tema por tu cuenta.
-
 3. Desarrolla orientado a objetos
 Como ya mencionamos, en Ruby cada elemento de la línea de código es un objeto. 
 Por ejemplo: booleanos, cadenas, clases, etc. De esta forma pueden utilizarse 
